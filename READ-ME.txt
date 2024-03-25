@@ -1,4 +1,4 @@
-  =>  Template Name    : Paradise Hotel - Hotel HTML Template
+  =>  Template Name    : Paradise Hotel
 
   =>  Template Link    : https://htmlcodex.com/hotel-html-template
 
