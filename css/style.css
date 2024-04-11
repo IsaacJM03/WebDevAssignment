@@ -296,7 +296,7 @@
 
 /* styling to correct image size */
 .container-xxl .container .row .col-lg-3 .rounded .position-relative {
-    padding-top: 100%; /* Set padding top to 100% for a square aspect ratio */
+    padding-top: 100%; 
     position: relative;
     overflow: hidden;
 }
