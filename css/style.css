@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #FEA116;
     --light: #F1F8FF;
@@ -413,7 +412,20 @@
     color: var(--secondary) !important;
 }
 
+/* styling to correct image size */
+.container-xxl .container .row .col-lg-3 .rounded .position-relative {
+    padding-top: 100%; /* Set padding top to 100% for a square aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
 
+.container-xxl .container .row .col-lg-3 .rounded .position-relative img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
 /*** Footer ***/
 .newsletter {
     position: relative;
