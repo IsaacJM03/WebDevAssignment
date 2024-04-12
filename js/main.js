@@ -92,3 +92,4 @@
         }
     });
 })(jQuery);
+// jquery helps in dom(document object model) manipulation,event handling and animation using the wow js library
