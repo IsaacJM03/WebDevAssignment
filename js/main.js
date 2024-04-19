@@ -1,6 +1,6 @@
 // Wrap the code in a self-invoking function to create a closure and avoid polluting the global namespace
 (function ($) {
-    "use strict";
+    "use strict"; // to avoid use of undeclared variables
 
     // Function to handle spinner animation
     var spinner = function () {
@@ -8,8 +8,8 @@
         setTimeout(function () {
             // Check if the spinner element exists in the DOM
             if ($('#spinner').length > 0) {
-                // Remove the 'show' class from the spinner element
-                $('#spinner').removeClass('show');
+                // Remove the 'show' class from the spinner element hence hiding it
+                $('#spinner').removeClass('show'); 
             }
         }, 1);
     };
@@ -30,12 +30,14 @@
         if (this.matchMedia("(min-width: 992px)").matches) {
             // Handle dropdown behavior on hover for larger screens
             $dropdown.hover(
+                // when mouse enters dropdown
                 function() {
                     const $this = $(this);
                     $this.addClass(showClass);
                     $this.find($dropdownToggle).attr("aria-expanded", "true");
                     $this.find($dropdownMenu).addClass(showClass);
                 },
+                // when mouse leaves dropdown
                 function() {
                     const $this = $(this);
                     $this.removeClass(showClass);
@@ -78,6 +80,7 @@
         dots: false,
         loop: true,
         nav : true,
+        // arrows that show previous and next
         navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
